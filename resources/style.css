@@ -15,6 +15,24 @@ body, html {
 a {
     color: #3AB8B6;
     text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #C778DD;
+}
+
+.contact-button {
+    display: inline-block;
+    border: 1px solid #3AB8B6;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+    border: 1px solid #C778DD;
 }
 
 /* NAV BAR  */
@@ -98,6 +116,7 @@ nav ul {
 .content {
     margin: 15rem 19rem 15rem 24rem;
     display: flex;
+    flex-direction: column;
 }
 
 .fade-in {
@@ -109,9 +128,46 @@ nav ul {
     100% {opacity: 1; }
 }
 
+.h2 {
+    font-size: 2rem;
+    position: relative;
+    float: none;
+    clear: both;
+    display: inline-block;
+}
+
+.h2::after {
+    content: "";
+    display: block;
+    width: 17.6rem;
+    height: 0.06rem;
+    background-color: #3AB8B6;
+    position: absolute;
+    transform: translate(100%, -50%);
+    right: -1rem;
+    top: 50%;
+}
+
+.section {
+    height: 100vh;
+}
+
+.fade {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 2.5s;
+}
+
+.fade.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* HERO  */
 
 .hero {
     width: 43rem;
+    padding-bottom: 19rem;
 }
 
 h1 {
@@ -129,4 +185,136 @@ h1 {
 
 .hero-title span {
     color: #3AB8B6;
+}
+
+/* ABOUT ME  */
+
+.about-me {
+    width: 49.25rem;
+    padding-bottom: 19rem;
+}
+
+.about-me-content {
+    display: flex;
+}
+
+.about-me img {
+    height: 13.8rem;
+    width: 13.8rem;
+}
+
+/* SKILLS  */
+
+.skills {
+    width: 43rem;
+    padding-bottom: 19rem;
+}
+
+.skills-content {
+    padding-top: 4.18rem;
+    display: flex;
+    gap: 1.8rem;
+    align-items: flex-start;
+}
+
+.skill-block {
+    border: 1px solid #3AB8B6;
+    display: flex;
+    flex-direction: column;
+    max-width: 11rem;
+    min-width: 200px;
+}
+
+.skill-block-name {
+    padding: 8px;
+    border-bottom: 1px solid #3AB8B6;
+}
+
+.skill-block-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+}
+
+.skill-block-skill {
+    list-style: none;
+    margin: 0;
+}
+
+/* PROJECTS  */
+
+.projects {
+    width: 43rem;
+    padding-bottom: 19rem;
+}
+
+.projects-content {
+    padding-top: 4.18rem;
+    display: flex;
+    gap: 1.8rem;
+    align-items: flex-start;
+}
+
+.project-block {
+    border: 1px solid #3AB8B6;
+    display: flex;
+    flex-direction: column;
+    min-width: 19.5rem;
+    min-height: 15.8rem;
+}
+
+.project {
+    margin: 1.3rem;
+}
+
+.project-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-bottom: 0.8rem;
+}
+
+.project-top img {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.github-link-projects {
+    width: 1.3rem;
+    height: 1.3rem;
+    background-image: url(./images/github.png);
+    background-size: cover;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.github-link-projects:hover {
+    background-image: url(./images/github-hover.png);
+    cursor: pointer;
+}
+
+.link {
+    width: 1.3rem;
+    height: 1.3rem;
+    background-image: url(./images/link.png);
+    background-size: cover;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.link:hover {
+    background-image: url(./images/link-hover.png);
+    cursor: pointer;
+}
+
+
+
+
+footer {
+    text-align: center;
 }
