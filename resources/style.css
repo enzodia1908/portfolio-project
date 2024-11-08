@@ -5,11 +5,12 @@
 body, html {
     font-family: "Fira Code", monospace;
     font-size: 16px;
-    margin: 0.5rem 1rem;
+    /* margin: 0.5rem 0.5rem; */
     padding: 0;
     background-color: #282C33;
     color: #ABB2BF;
     letter-spacing: 0.05rem;
+    margin: 0;
 }
 
 a {
@@ -28,31 +29,42 @@ a:hover {
     padding: 0.5rem 1rem;
     font-weight: 700;
     margin-top: 2rem;
-    transition: 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .button:hover {
-    border: 1px solid #C778DD;
+    background-color: #91919147; /* border color for button on hover */
 }
 
 /* NAV BAR  */
 
-.nav-bar {
+header {
     display: flex;
-    /* position: fixed; */
-    z-index: 1;
+    position: fixed;
     justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    background-color: #282C33;
+    z-index: 1;
 }
+
+/* nav {
+    padding-right: 1rem;
+} */
 
 nav ul {
     display: flex;
     list-style-type: none;
-    gap: 2.2rem;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
 }
 
 #logo {
-    width: 4.25rem;
-    height: 4rem;
+    width: 3.25rem;
+    height: 3rem;
 }
 
 /* MEDIA SIDEBAR  */
@@ -64,6 +76,7 @@ nav ul {
     flex-direction: column;
     bottom: 0rem;
     gap: 0.9rem;
+    padding-left: 1.3rem;
 }
 
 .media-logos {
@@ -114,7 +127,7 @@ nav ul {
 /* CONTENT  */
 
 .content {
-    margin: 15rem 10rem 15rem 15rem;
+    /* margin: 15rem 10rem 15rem 10rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,7 +144,7 @@ nav ul {
 }
 
 .h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: relative;
     float: none;
     clear: both;
@@ -141,18 +154,40 @@ nav ul {
 .h2::after {
     content: "";
     display: block;
-    width: 17.6rem;
+    width: 10rem;
     height: 0.06rem;
     background-color: #3AB8B6;
     position: absolute;
     transform: translate(100%, -50%);
-    right: -1rem;
+    right: -0.5rem;
     top: 50%;
 }
 
-.section {
-    height: 100vh;
+section {
+    width: 49.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.hero {
+    height: 100vh;
+    padding-top: 4rem;
+}
+
+.about-me, .skills, 
+.projects {
+    height: 80vh;
+}
+
+.contact {
+    height: 90vh;
+}
+
+.about-me-page {
+    height: 80vh;
+}
+
 
 .fade {
     opacity: 0;
@@ -165,12 +200,11 @@ nav ul {
     transform: translate(0, 0);
 }
 
-/* HERO  */
+/* p, div {
+    margin: 0;
+} */
 
-.hero {
-    width: 43rem;
-    padding-bottom: 19rem;
-}
+/* HERO  */
 
 h1 {
     font-size: 4.4rem;
@@ -189,31 +223,28 @@ h1 {
     color: #3AB8B6;
 }
 
-/* ABOUT ME  */
-
-.about-me {
-    width: 49.25rem;
-    padding-bottom: 19rem;
+.hero-title, .hero-text {
+    width: 43rem;
 }
 
-.about-me-content {
+/* ABOUT ME  */
+
+.about-me-content, .about-me-page-content {
     display: flex;
 }
 
-.about-me img {
+.about-me-img {
     height: 13.8rem;
     width: 13.8rem;
 }
 
-/* SKILLS  */
-
-.skills {
-    width: 43rem;
-    padding-bottom: 19rem;
+.about-me-page p {
+    padding-left: 1rem;
 }
 
+/* SKILLS  */
+
 .skills-content {
-    padding-top: 4.18rem;
     display: flex;
     gap: 1.8rem;
     align-items: flex-start;
@@ -246,28 +277,27 @@ h1 {
 
 /* PROJECTS  */
 
-.projects {
-    width: 43rem;
-    padding-bottom: 19rem;
-}
-
 .projects-content {
-    padding-top: 4.18rem;
+    /* padding-top: 2rem; */
     display: flex;
     gap: 1.8rem;
-    align-items: flex-start;
+    /* align-items: flex-start; */
 }
 
 .project-block {
     border: 1px solid #3AB8B6;
     display: flex;
     flex-direction: column;
-    min-width: 19.5rem;
-    min-height: 15.8rem;
+    min-width: 15rem;
+    /* min-height: 15.8rem; */
 }
 
 .project {
     margin: 1.3rem;
+}
+
+.project h3 {
+    font-size: 1rem;
 }
 
 .project-top {
@@ -278,8 +308,8 @@ h1 {
 }
 
 .project-top img {
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 1.8rem;
+    height: 1.8rem;
 }
 
 .links {
@@ -317,8 +347,8 @@ h1 {
 
 /* CONTACT  */
 
-.contact-content {
-
+.contact {
+    padding-bottom: 8rem;
 }
 
 
