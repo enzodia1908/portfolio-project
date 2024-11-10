@@ -1,6 +1,5 @@
 // // fade-in-down function 
 
-
 window.addEventListener("load", () => {
     const items = document.querySelectorAll(".fade-down");
     const itemsArray = Array.from(items);
@@ -24,6 +23,11 @@ $(document).on("scroll", () => {
 });
 
 
-// window.addEventListener("load", () => {
-//     document.querySelector(".fade-in").classList.add("visible");
-// });
+function toggleNav() {
+    const mobileNav = document.getElementById("mobileNav");
+    if (mobileNav.style.width === "13rem") {
+      mobileNav.style.width = "0";
+    } else {
+      mobileNav.style.width = "13rem";
+    }
+  };
