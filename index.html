@@ -15,10 +15,14 @@
             <a href="./index.html"><img id="logo" class="fade-down" src="./resources/images/logo.png"></a>
             <nav>
                 <ul>
-                    <a href="./about-me.html"><li class="fade-down">about me</li></a>
-                    <a href="./projects.html"><li class="fade-down">projects</li></a>
+                    <a href="#about-me"><li class="fade-down">about me</li></a>
+                    <a href="#projects"><li class="fade-down">projects</li></a>
                     <a href="#contact"><li class="fade-down">contact</li></a>
-                    <a href><li class="fade-down">toggle</li></a>
+                    <!-- <a href><li class="fade-down">toggle</li></a> -->
+                    <button id="theme-toggle">
+                        <li class="fade-down"><img id="theme-icon" src="./resources/images/on-button.png" alt="Toggle Theme"></li>
+                      </button>
+                    
                 </ul>
             </nav>
         </div>
@@ -30,18 +34,17 @@
         <div class="mobile-nav" id="mobileNav">
             <div class="mobile-nav-links">
                 <a href="javascript:void(0)" class="close-btn" onclick="toggleNav()">&times;</a>
-                <a href="./about-me.html">about me</a>
-                <a href="./projects.html">projects</a>
+                <a href="#about-me">about me</a>
+                <a href="#projects">projects</a>
                 <a href="#contact">contact</a>
-                <a href>toggle</a>
             </div>
             
             <div class="mobile-media-logos">
-                <a href><img class="mobile-media-logo" src="./resources/images/instagram.png" alt="instagram"></a>
-                <a href><img class="mobile-media-logo" src="./resources/images/github.png" alt="github"></a>
-                <a href><img class="mobile-media-logo" src="./resources/images/discord.png" alt="discord"></a>
-                <a href><img class="mobile-media-logo" src="./resources/images/spotify.png" alt="spotify"></a>
-                <a href><img class="mobile-media-logo" src="./resources/images/linkedin.png" alt="linkedin"></a>
+                <a href><img class="mobile-media-logo" src="./resources/images/instagram-icon.png" alt="instagram"></a>
+                <a href><img class="mobile-media-logo" src="./resources/images/github-icon.png" alt="github"></a>
+                <a href><img class="mobile-media-logo" src="./resources/images/discord-icon.png" alt="discord"></a>
+                <a href><img class="mobile-media-logo" src="./resources/images/spotify-icon.png" alt="spotify"></a>
+                <a href><img class="mobile-media-logo" src="./resources/images/linkedin-icon.png" alt="linkedin"></a>
             </div>
             
         </div>
@@ -49,11 +52,11 @@
 
     <!-- MEDIA BAR SIDE -->
     <div class="media-sidebar fade-up">
-        <a href=><img class="media-logos" src="./resources/images/instagram.png" alt="instagram"></a>
-        <a href><img class="media-logos" src="./resources/images/github.png" alt="github"></a>
-        <a href="https://discord/users/1070563944533590036"><img class="media-logos" src="./resources/images/discord.png" alt="discord"></a>
-        <a href><img class="media-logos" src="./resources/images/spotify.png" alt="spotify"></a>
-        <a href><img class="media-logos" src="./resources/images/linkedin.png" alt="linkedin"></a>
+        <a href=><img class="media-logos" id="instagram-icon" src="./resources/images/instagram-icon.png" alt="instagram"></a>
+        <a href><img class="media-logos" id="github-icon" src="./resources/images/github-icon.png" alt="github"></a>
+        <a href="https://discord/users/1070563944533590036"><img class="media-logos" id="discord-icon"  src="./resources/images/discord-icon.png" alt="discord"></a>
+        <a href><img class="media-logos" id="spotify-icon" src="./resources/images/spotify-icon.png" alt="spotify"></a>
+        <a href><img class="media-logos" id="linkedin-icon" src="./resources/images/linkedin-icon.png" alt="linkedin"></a>
         <span class="media-line"></span>
     </div>
 
@@ -74,7 +77,7 @@
         </section>
 
         <!-- ABOUT ME CONTENT -->
-        <section class="about-me fade">
+        <section class="about-me fade" id="about-me">
             <div class="about-me-header"><h2 class="h2">about me</h2></div>
             <div class="about-me-content">
                 <p>
@@ -84,20 +87,20 @@
                 </p>
                 <img class="about-me-img" src="./resources/images/about-me.png"/>
             </div>
-            <a href="./about-me.html"><div class="button">See more</div></a>
+            <!-- <a href="./about-me.html"><div class="button">See more</div></a> -->
         </section>
 
         <!-- PROJECTS CONTENT -->
-        <section class="projects fade">
+        <section class="projects fade" id="projects">
             <div class="projects-header"><h2 class="h2">projects</h2></div>
             <div class="projects-content">
                 <div class="project-block">
                     <div class="project">
                         <div class="project-top">
-                            <img src="./resources/images/folder.png">
+                            <img src="./resources/images/folder-icon.png" class="project-logos" id="folder-icon">
                             <div class="links">
-                                <a href="https://github.com/enzodia1908/hyperspace-hangout" target="_blank"><div class="github-link-projects"></div></a>
-                                <a href="https://enzodia1908.github.io/hyperspace-hangout/" target="_blank"><div class="link"></div></a>
+                                <a href="https://github.com/enzodia1908/hyperspace-hangout" target="_blank"><img src="./resources/images/github-icon.png" class="project-logos" id="github-icon"></a>
+                                <a href="https://enzodia1908.github.io/hyperspace-hangout/" target="_blank"><img src="./resources/images/link-icon.png" class="project-logos" id="link-icon"></a>
                             </div>
                         </div>
                         <div class="project-info">
@@ -110,10 +113,10 @@
                 <div class="project-block">
                     <div class="project">
                         <div class="project-top">
-                            <img src="./resources/images/folder.png">
+                            <img src="./resources/images/folder-icon.png" class="project-logos" id="folder-icon">
                             <div class="links">
-                                <a href="https://github.com/enzodia1908/gymshark-homepage-lookalike" target="_blank"><div class="github-link-projects"></div></a>
-                                <a href="https://enzodia1908.github.io/gymshark-homepage-lookalike/" target="_blank"><div class="link"></div></a>
+                                <a href="https://github.com/enzodia1908/hyperspace-hangout" target="_blank"><img src="./resources/images/github-icon.png" class="project-logos" id="github-icon"></a>
+                                <a href="https://enzodia1908.github.io/hyperspace-hangout/" target="_blank"><img src="./resources/images/link-icon.png" class="project-logos" id="link-icon"></a>
                             </div>
                         </div>
                         <div class="project-info">
@@ -126,10 +129,10 @@
                 <div class="project-block hide">
                     <div class="project">
                         <div class="project-top">
-                            <img src="./resources/images/folder.png">
+                            <img src="./resources/images/folder-icon.png" class="project-logos" id="folder-icon">
                             <div class="links">
-                                <a href="https://github.com/enzodia1908/mixed-messages" target="_blank"><div class="github-link-projects"></div></a>
-                                <a href="https://enzodia1908.github.io/mixed-messages/" target="_blank"><div class="link"></div></a>
+                                <a href="https://github.com/enzodia1908/hyperspace-hangout" target="_blank"><img src="./resources/images/github-icon.png" class="project-logos" id="github-icon"></a>
+                                <a href="https://enzodia1908.github.io/hyperspace-hangout/" target="_blank"><img src="./resources/images/link-icon.png" class="project-logos" id="link-icon"></a>
                             </div>
                         </div>
                         <div class="project-info">
@@ -139,11 +142,11 @@
                     </div>
                 </div>
             </div>
-            <a href="./projects.html"><div class="projects-view-more">View more</div></a>
+            <a href="#projects"><div class="projects-view-more">View more (coming soon!)</div></a>
         </section>
 
         <!-- CONTACT CONTENT -->
-        <section class="contact fade">
+        <section class="contact fade" id="contact">
             <div class="contact-header"><h2 class="h2">contact</h2></div>
             <div class="contact-content">
                 <p>My inbox is always open, whether it's to ask questions about any of my projects, if you need any help with your projects or if you just want to say hi. :)</p>
@@ -155,7 +158,7 @@
     
 
 
-    <footer>credits: <a href="https://www.flaticon.com/free-icons/folder" title="folder icons">folder icons by dmitri13</a>, <a href="https://www.flaticon.com/free-icons/external-link" title="external link icons">external link icon by th studio</a></footer>
+    <footer>credits: <a href="https://www.flaticon.com/free-icons/folder" title="folder icons">folder icons by dmitri13</a>, <a href="https://www.flaticon.com/free-icons/external-link" title="external link icons">external link icon by th studio</a>, <a href="https://www.flaticon.com/free-icons/toggle" title="toggle icons">toggle icons created by plastic donut</a></footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./resources/script.js"></script>
     

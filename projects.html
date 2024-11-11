@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/style.css" type="text/css">
+    <title>Portfolio Website</title>
+</head>
+<body class="home">
+
+    <!-- NAV BAR TOP -->
+    <header>
+        <div class="main-nav">
+            <a href="./index.html"><img id="logo" class="fade-down" src="./resources/images/logo.png"></a>
+            <nav>
+                <ul>
+                    <a href="#about-me"><li class="fade-down">about me</li></a>
+                    <a href="./projects.html"><li class="fade-down">projects</li></a>
+                    <a href="#contact"><li class="fade-down">contact</li></a>
+                    <a href><li class="fade-down">toggle</li></a>
+                </ul>
+            </nav>
+        </div>
+            
+        <div class="burger-icon" onclick="toggleNav()">
+            <img src="./resources/images/burger-icon.png" alt="navigation">
+        </div>
+
+        <div class="mobile-nav" id="mobileNav">
+            <div class="mobile-nav-links">
+                <a href="javascript:void(0)" class="close-btn" onclick="toggleNav()">&times;</a>
+                <a href="./about-me.html">about me</a>
+                <a href="./projects.html">projects</a>
+                <a href="#contact">contact</a>
+                <a href>toggle</a>
+            </div>
+            
+            <div class="mobile-media-logos">
+                <a href><img class="mobile-media-logo" src="./resources/images/instagram.png" alt="instagram"></a>
+                <a href><img class="mobile-media-logo" src="./resources/images/github.png" alt="github"></a>
+                <a href><img class="mobile-media-logo" src="./resources/images/discord.png" alt="discord"></a>
+                <a href><img class="mobile-media-logo" src="./resources/images/spotify.png" alt="spotify"></a>
+                <a href><img class="mobile-media-logo" src="./resources/images/linkedin.png" alt="linkedin"></a>
+            </div>
+            
+        </div>
+    </header>
+
+    <!-- MEDIA BAR SIDE -->
+    <div class="media-sidebar fade-up">
+        <a href=><img class="media-logos" src="./resources/images/instagram.png" alt="instagram"></a>
+        <a href><img class="media-logos" src="./resources/images/github.png" alt="github"></a>
+        <a href="https://discord/users/1070563944533590036"><img class="media-logos" src="./resources/images/discord.png" alt="discord"></a>
+        <a href><img class="media-logos" src="./resources/images/spotify.png" alt="spotify"></a>
+        <a href><img class="media-logos" src="./resources/images/linkedin.png" alt="linkedin"></a>
+        <span class="media-line"></span>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="content">
+
+        <!-- PROJECTS CONTENT -->
+        <section class="projects">
+            <div class="projects-header"><h2 class="h2">projects</h2></div>
+            <div class="projects-content">
+                <div class="project-block">
+                    <div class="project">
+                        <div class="project-top">
+                            <img src="./resources/images/folder.png">
+                            <div class="links">
+                                <a href="https://github.com/enzodia1908/hyperspace-hangout" target="_blank"><div class="github-link-projects"></div></a>
+                                <a href="https://enzodia1908.github.io/hyperspace-hangout/" target="_blank"><div class="link"></div></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>The Hyperspace Hangout</h3>
+                            <p>A responsive club website created utilising the fundamentals of FlexBox.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-block">
+                    <div class="project">
+                        <div class="project-top">
+                            <img src="./resources/images/folder.png">
+                            <div class="links">
+                                <a href="https://github.com/enzodia1908/gymshark-homepage-lookalike" target="_blank"><div class="github-link-projects"></div></a>
+                                <a href="https://enzodia1908.github.io/gymshark-homepage-lookalike/" target="_blank"><div class="link"></div></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Gymshark Homepage Lookalike</h3>
+                            <p>First website project using Flexbox and inspired by the Gymshark website.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-block hide">
+                    <div class="project">
+                        <div class="project-top">
+                            <img src="./resources/images/folder.png">
+                            <div class="links">
+                                <a href="https://github.com/enzodia1908/mixed-messages" target="_blank"><div class="github-link-projects"></div></a>
+                                <a href="https://enzodia1908.github.io/mixed-messages/" target="_blank"><div class="link"></div></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Mixed Messages</h3>
+                            <p>A fun project that predicts your future, built using Javascript.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="./projects.html"><div class="projects-view-more">View more</div></a>
+        </section>
+
+    </div>
+    
+
+
+    <footer>credits: <a href="https://www.flaticon.com/free-icons/folder" title="folder icons">folder icons by dmitri13</a>, <a href="https://www.flaticon.com/free-icons/external-link" title="external link icons">external link icon by th studio</a></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./resources/script.js"></script>
+    
+
+</body>
+</html>
